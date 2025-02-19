@@ -51,8 +51,8 @@ export const ollamadynamic: Plugin<[OllamaDynamicPluginParams]> = genkitPlugin(
       supports: {
         multiturn: true,
         media: true,
-        tools: true,
-        systemRole: true,
+        tools: false,
+        systemRole: false,
       },
     },
     async (input, streamingCallback) => {
